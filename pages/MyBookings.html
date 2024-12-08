@@ -1,0 +1,32 @@
+<!-- pages/MyBookings.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/MyBookingsStyles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="my-bookings">
+            <h2>Your Booked Flights</h2>
+            <div id="bookings-list">
+                <!-- Booking details will be displayed here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+    <script type="module" src="../scripts/MyBookings.js"></script>
+</body>
+</html>
