@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnoAir - Main Screen</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="control-panel">
+            <h2>Welcome to OnoAir</h2>
+            <p>Please choose your role:</p>
+            <div class="buttons">
+                <a href="ManageFlights.html" class="btn">Admin - Manage Flights</a>
+                <a href="ManageDestinations.html" class="btn">Admin - Manage Destinations</a>
+                <a href="FlightSearch.html" class="btn">User - Book a Flight</a>
+                <a href="MyBookings.html" class="btn">User - Manage Bookings</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+</body>
+</html>
