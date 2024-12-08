@@ -1,0 +1,64 @@
+<!-- pages/AddDestination.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Add New Destination</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/AddDestinationStyles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="add-destination-form">
+            <h2>Add New Destination</h2>
+            <form id="addDestinationForm">
+                <!-- Destination Code -->
+                <label for="destinationCode">Destination Code:</label>
+                <input type="text" id="destinationCode" name="destinationCode" placeholder="e.g., CDG" maxlength="3" required>
+                <small class="error-message" id="destinationCodeError"></small>
+
+                <!-- Destination Name -->
+                <label for="destinationName">Destination Name:</label>
+                <input type="text" id="destinationName" name="destinationName" placeholder="e.g., Paris" required>
+                <small class="error-message" id="destinationNameError"></small>
+
+                <!-- Airport Name -->
+                <label for="airportName">Airport Name:</label>
+                <input type="text" id="airportName" name="airportName" placeholder="e.g., Charles de Gaulle Airport" required>
+                <small class="error-message" id="airportNameError"></small>
+
+                <!-- Airport URL -->
+                <label for="airportUrl">Airport Website URL:</label>
+                <input type="url" id="airportUrl" name="airportUrl" placeholder="e.g., https://www.parisaeroport.fr/en" required>
+                <small class="error-message" id="airportUrlError"></small>
+
+                <!-- Email Address -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="e.g., info@parisaeroport.fr" required>
+                <small class="error-message" id="emailError"></small>
+
+                <!-- Image URL -->
+                <label for="imageUrl">Image URL:</label>
+                <input type="url" id="imageUrl" name="imageUrl" placeholder="e.g., https://example.com/image.jpg" required>
+                <small class="error-message" id="imageUrlError"></small>
+
+                <!-- Buttons -->
+                <button type="submit" class="btn">Save Destination</button>
+                <button type="button" class="btn" onclick="window.history.back()">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+    <script type="module" src="../scripts/addDestination.js"></script>
+</body>
+</html>
