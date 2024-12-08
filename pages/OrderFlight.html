@@ -1,0 +1,43 @@
+<!-- pages/OrderFlight.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Flight</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/OrderFlightStyles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="flight-details">
+            <h2>Selected Flight Details</h2>
+            <div class="details-frame">
+                <p id="flight-info"></p>
+            </div>
+        </section>
+
+        <section id="passenger-details">
+            <h2>Passenger Information</h2>
+            <label for="num-passengers">Number of Passengers:</label>
+            <input type="number" id="num-passengers" min="1" max="10" value="1">
+            <button id="generate-fields" class="btn">Generate Fields</button>
+            <form id="passenger-form">
+                <div id="passenger-fields"></div>
+                <button type="submit" id="save-booking" class="save-btn">Save Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+    <script type="module" src="../scripts/OrderFlight.js"></script>
+</body>
+</html>
