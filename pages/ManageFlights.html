@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Manage Flights</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/ManageFlightsStyles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="manage-flights">
+            <h2>Manage Flights</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flight No.</th>
+                            <th>Origin</th>
+                            <th>Destination</th>
+                            <th>Departure Date & Time</th>
+                            <th>Landing Date & Time</th>
+                            <th>Seats Available</th>
+                        </tr>
+                    </thead>
+                    <tbody id="flight-list">
+                        <!-- Dynamic flight data will appear here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="button-container">
+                <a href="FlightAddForm.html" class="btn">➕ Add New Flight</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+    <script type="module" src="../scripts/manage-flights.js"></script>
+</body>
+</html>
