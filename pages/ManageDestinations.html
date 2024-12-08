@@ -1,0 +1,49 @@
+<!-- pages/ManageDestinations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Manage Destinations</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/ManageDestinationsStyles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="manage-destinations">
+            <h2>Manage Destinations</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destination Code</th>
+                            <th>Destination Name</th>
+                            <th>Airport Name</th>
+                            <th>Airport Website</th>
+                            <th>Email Address</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="destination-list">
+                        <!-- Dynamic destination data will appear here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="button-container">
+                <a href="AddDestination.html" class="btn">➕ Add New Destination</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+    <script type="module" src="../scripts/manage-destinations.js"></script>
+</body>
+</html>
