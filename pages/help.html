@@ -1,0 +1,131 @@
+<!-- pages/help.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnoAir - Help</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/help.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="help-section">
+            <h2>Welcome to OnoAir Help Center</h2>
+            <p>Your guide to navigating and using the OnoAir web application.</p>
+
+            <nav class="help-nav">
+                <ul>
+                    <li><a href="#getting-started">Getting Started</a></li>
+                    <li><a href="#for-users">For Users</a></li>
+                    <li><a href="#for-admins">For Admins</a></li>
+                    <li><a href="#faq">Frequently Asked Questions</a></li>
+                    <li><a href="#contact-support">Contact Support</a></li>
+                </ul>
+            </nav>
+
+            <section id="getting-started">
+                <h3>Getting Started</h3>
+                <p>OnoAir is your go-to platform for booking flights and managing flight operations. Whether you're a traveler or an administrator, this guide will help you make the most of our application.</p>
+            </section>
+
+            <section id="for-users">
+                <h3>For Users</h3>
+
+                <h4>Booking a Flight</h4>
+                <ol>
+                    <li>Navigate to the <strong>User - Book a Flight</strong> section from the main screen.</li>
+                    <li>Use the search filters to select your <strong>Origin</strong> and <strong>Destination</strong>.</li>
+                    <li>Click the <strong>Search</strong> button to view available flights.</li>
+                    <li>Review the list of flights and click <strong>Book</strong> on your preferred flight.</li>
+                    <li>Enter the number of passengers and provide passenger details.</li>
+                    <li>Click <strong>Save Booking</strong> to confirm your reservation.</li>
+                </ol>
+
+                <h4>Managing Your Bookings</h4>
+                <ol>
+                    <li>Go to the <strong>User - Manage Bookings</strong> section from the main screen.</li>
+                    <li>View a list of your current and past bookings.</li>
+                    <li>Click on a booking to see more details.</li>
+                    <!-- Future functionality for modifying or canceling bookings can be added here -->
+                </ol>
+            </section>
+
+            <section id="for-admins">
+                <h3>For Admins</h3>
+
+                <h4>Managing Flights</h4>
+                <ol>
+                    <li>Access the <strong>Admin - Manage Flights</strong> section from the main screen.</li>
+                    <li>View the list of all scheduled flights.</li>
+                    <li>To add a new flight, click on the <strong>Add New Flight</strong> button.</li>
+                    <li>Fill out the flight details, including Flight Number, Origin, Destination, Departure and Arrival times, and Seats Available.</li>
+                    <li>Click <strong>Save Flight</strong> to add the flight to the schedule.</li>
+                    <!-- Instructions for editing or deleting flights can be added here -->
+                </ol>
+
+                <h4>Managing Destinations</h4>
+                <ol>
+                    <li>Go to the <strong>Admin - Manage Destinations</strong> section from the main screen.</li>
+                    <li>Review the list of all destinations.</li>
+                    <li>To add a new destination, click on the <strong>Add New Destination</strong> button.</li>
+                    <li>Provide the Destination Code, Destination Name, Airport Name, Airport Website URL, Email Address, and Image URL.</li>
+                    <li>Click <strong>Save Destination</strong> to add it to the system.</li>
+                    <!-- Instructions for editing or deleting destinations can be added here -->
+                </ol>
+            </section>
+
+            <section id="faq">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <h4>How do I search for a flight?</h4>
+                    <p>Navigate to the <strong>User - Book a Flight</strong> section, select your origin and destination, and click <strong>Search</strong>.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I manage my bookings?</h4>
+                    <p>Yes, you can view your bookings in the <strong>User - Manage Bookings</strong> section.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>As an admin, how do I add a new flight?</h4>
+                    <p>Go to the <strong>Admin - Manage Flights</strong> section and click on <strong>Add New Flight</strong>.</p>
+                </div>
+                <!-- Add more FAQs as needed -->
+            </section>
+
+            <section id="contact-support">
+                <h3>Contact Support</h3>
+                <p>If you need further assistance, please reach out to our support team.</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@onoair.com">support@onoair.com</a></li>
+                    <li>Phone: +1 (800) 123-4567</li>
+                    <!-- Add a contact form if desired -->
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('.help-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
