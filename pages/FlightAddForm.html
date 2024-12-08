@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Add Flight</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/AddFlightStyle.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="add-flight-form">
+            <h2>Add New Flight</h2>
+            <form id="addFlightForm" novalidate>
+                <!-- Flight Number -->
+                <label for="flightNo">Flight Number:</label>
+                <input type="text" id="flightNo" name="flightNo" placeholder="e.g., W61283" required>
+                <small class="error-message" id="flightNoError"></small>
+
+                <!-- Origin -->
+                <label for="origin">Origin:</label>
+                <input type="text" id="origin" name="origin" placeholder="e.g., Tel Aviv" required>
+                <small class="error-message" id="originError"></small>
+
+                <!-- Destination -->
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="e.g., Krakow" required>
+                <small class="error-message" id="destinationError"></small>
+
+                <!-- Boarding Date -->
+                <label for="boardingDate">Boarding Date:</label>
+                <input type="date" id="boardingDate" name="boardingDate" required>
+                <small class="error-message" id="boardingDateError"></small>
+
+                <!-- Boarding Time -->
+                <label for="boardingTime">Boarding Time:</label>
+                <input type="time" id="boardingTime" name="boardingTime" required>
+                <small class="error-message" id="boardingTimeError"></small>
+
+                <!-- Arrival Date -->
+                <label for="arrivalDate">Arrival Date:</label>
+                <input type="date" id="arrivalDate" name="arrivalDate" required>
+                <small class="error-message" id="arrivalDateError"></small>
+
+                <!-- Arrival Time -->
+                <label for="arrivalTime">Arrival Time:</label>
+                <input type="time" id="arrivalTime" name="arrivalTime" required>
+                <small class="error-message" id="arrivalTimeError"></small>
+
+                <!-- Number of Seats -->
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" placeholder="e.g., 200" min="1" required>
+                <small class="error-message" id="seatsError"></small>
+
+                <!-- Buttons -->
+                <button type="submit" class="btn">Save Flight</button>
+                <button type="button" class="btn" onclick="window.history.back()">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module">
+        import { loadComponent } from '../scripts/components.js';
+        loadComponent('header-placeholder', '../components/header.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+    <script type="module" src="../scripts/formValidation.js"></script>
+</body>
+</html>
