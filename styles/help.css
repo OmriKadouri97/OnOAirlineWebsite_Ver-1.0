@@ -1,0 +1,127 @@
+/* styles/help.css */
+
+@import url('../styles/base.css');
+
+/* Help Section Styles */
+.help-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.help-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+.help-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.help-nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.help-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.help-nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.help-nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.help-nav a:hover {
+    text-decoration: underline;
+}
+
+.help-section h3 {
+    font-size: 2em;
+    margin-top: 40px;
+    color: #333;
+}
+
+.help-section h4 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #555;
+}
+
+.help-section ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.help-section li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.3em;
+    color: #007bff;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+#contact-support ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-support li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+#contact-support a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact-support a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .help-section {
+        padding: 15px;
+    }
+
+    .help-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .help-section h2 {
+        font-size: 2em;
+    }
+
+    .help-section h3 {
+        font-size: 1.8em;
+    }
+
+    .help-section h4 {
+        font-size: 1.4em;
+    }
+}
