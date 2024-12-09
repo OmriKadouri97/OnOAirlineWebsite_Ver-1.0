@@ -1,0 +1,82 @@
+/* styles/OrderFlightStyles.css */
+
+@import url('../styles/base.css');
+
+/* Details Frame */
+.details-frame {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Move the headings slightly to the right */
+#flight-details h2,
+#passenger-details h2, 
+#passenger-details label
+{
+    margin-left: 20px; /* Adjust the value as needed */
+}
+
+#passenger-fields {
+    width: 100%; /* Ensure it spans the form width */
+    margin-bottom: 20px; /* Space between fields and Save Booking button */
+}
+
+/* Passenger Fields */
+.passenger-field {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+}
+/* Passenger Form */
+#passenger-form {
+    display: flex;
+    flex-direction: column; /* Stack fields vertically */
+    align-items: center; /* Center-align items */
+    margin: 60px auto;
+}
+
+.passenger-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.passenger-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Save Button */
+.save-btn {
+    margin-top: 20px;
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    max-width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.save-btn:hover {
+    background-color: #0056b3;
+}
+
